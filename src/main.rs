@@ -1,6 +1,5 @@
 use adventure_rs::{adventurer::Adventurer, enemy::Enemy, item::STARTING_ITEMS, items};
 use game_actor::GameActor;
-use game_actor_derive::{add_game_actor_attributes, GameActor};
 
 use std::collections::HashMap;
 
