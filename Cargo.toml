@@ -1,0 +1,12 @@
+[package]
+name = "adventure_rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+game_actor = { path = "./game_actor" }
+game_actor_derive = { path = "./game_actor/src/game_actor_derive" }
+serde = "1.0"
+serde_json = "1.0.85"
