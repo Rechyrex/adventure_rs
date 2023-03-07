@@ -41,3 +41,20 @@ macro_rules! items {
         }
     };
 }
+
+#[cfg(test)]
+mod tests {
+    use std::collections::HashMap;
+
+    use super::*;
+
+    #[test]
+    fn items_should_be_properly_instantiated() {
+        let items = items![
+            "item" => "Description"
+        ];
+        let mut expected_items = HashMap::new();
+        expected_items.insert("item".to_string(), "Description".to_string());
+        assert_eq!(expected_items, items);
+    }
+}
